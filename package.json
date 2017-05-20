@@ -1,0 +1,62 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "A base application from which other applications can be derived",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "~6.9.3",
+    "npm": "~3.10.10"
+  },
+  "scripts": {
+    "preversion": "npm run lint && npm test && npm run build && npm run task:git:merge_into_master",
+    "postversion": "git push && git push --tags",
+    "build": "webpack",
+    "lint": "tslint {./,src/**/,task/**/,test/**/}*.ts --type-check --project ./tsconfig.json",
+    "start": "ts-node -r module-alias/register src/index.ts",
+    "start:build": "node build/index.js",
+    "task": "ts-node -r module-alias/register task/index.ts",
+    "task:git:merge_into_master": "npm run task -- git/merge_into_master",
+    "test": "mocha --compilers ts:ts-node/register -r module-alias/register test/index.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Player1os/node-js-application.git"
+  },
+  "keywords": [
+    "application"
+  ],
+  "author": "Osama Hassanein <player1os@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Player1os/node-js-application/issues"
+  },
+  "homepage": "https://github.com/Player1os/node-js-application#readme",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.18",
+    "@types/webpack": "^2.2.15",
+    "@types/webpack-env": "^1.13.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1",
+    "module-alias": "^2.0.0",
+    "ts-loader": "^2.0.3",
+    "ts-node": "^3.0.4",
+    "tslint": "^5.2.0",
+    "tslint-config-airbnb": "^5.0.1",
+    "tsutils": "=1.6.0",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
+  },
+  "_moduleAliases": {
+    "#": "."
+  },
+  "dependencies": {
+    "@player1os/config": "^1.1.6"
+  }
+}

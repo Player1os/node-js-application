@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2017",
+		"allowJs": true,
+		"noImplicitAny": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"baseUrl": ".",
+		"paths": {
+			"*": [
+				"*"
+			],
+			"#/*": [
+				"./*"
+			]
+		}
+	},
+	"exclude": [
+		"build",
+		"node_modules"
+	]
+}
