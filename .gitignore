@@ -1,17 +1,12 @@
-# OS specific files.
-.DS_Store
-Thumbs.db
+# Build generated files.
+build
 
-# Config files file.
+# Environment variable files.
 .env
-pm2.json
 
 # NPM generated files.
-node_modules/*
+node_modules
 npm-debug.log*
 
-# Build generated files.
-build/*
-
-# Runtime generated files.
-output/*
+# Test coverage files.
+coverage
