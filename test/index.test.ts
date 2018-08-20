@@ -1,9 +1,3 @@
-import {
-	assert,
-} from 'chai'
-
-describe('Test suite', () => {
-	it('Test instance', () => {
-		assert(false, 'No tests are configured')
-	})
+test('Placeholder functional test', () => {
+	// This is a placeholder for an actual test.
 })
