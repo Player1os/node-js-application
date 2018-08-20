@@ -4,7 +4,8 @@
 [![NodeJS version](https://img.shields.io/badge/node%20version-v10.6.0-brightgreen.svg)](https://nodejs.org/dist/v10.6.0/)
 [![GitHub tag](https://img.shields.io/github/tag/Player1os/ts-node-application-template.svg?label=version)](https://github.com/Player1os/ts-node-application-template/releases)
 [![Build Status](https://travis-ci.org/Player1os/ts-node-application-template.svg?branch=master)](https://travis-ci.org/Player1os/ts-node-application-template)
-[![Coverage Status](https://img.shields.io/coveralls/github/Player1os/ts-node-application-template.svg)](https://coveralls.io/github/Player1os/ts-node-application-template?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/Player1os/ts-node-application-template.svg)](https://greenkeeper.io/)
+[![Coverage Status](https://img.shields.io/coveralls/github/Player1os/ts-node-application-template.svg)](https://coveralls.io/github/Player1os/ts-node-application-template?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Player1os/ts-node-application-template.svg)](https://greenkeeper.io/)
 
 This project serves as a template for any application compiled to be executed in a NodeJS environment.
 
