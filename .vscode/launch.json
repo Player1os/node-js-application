@@ -27,12 +27,14 @@
 		"name": "[Node] Build and run project",
 		"type": "node",
 		"request": "launch",
-		"args": ["${relativeFile}"],
+		"args": ["build/index.js"],
 		"runtimeArgs": [
 			"--nolazy",
 			"-r", "@player1os/typescript-support/lib/runtime/build_on_change.js"
 		],
 		"cwd": "${workspaceRoot}",
+		"console": "integratedTerminal",
+		"internalConsoleOptions": "neverOpen",
 		"protocol": "inspector",
 		"windows": {
 			"runtimeExecutable": "C:\\Programs\\nodejs\\node"
