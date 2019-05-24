@@ -35,7 +35,7 @@
     "npm": "^6.1.0"
   },
   "dependencies": {
-    "bluebird": "^3.5.1",
+    "bluebird": "^3.5.5",
     "dotenv": "^6.0.0",
     "raven": "^2.6.3",
     "source-map-support": "^0.5.9"
